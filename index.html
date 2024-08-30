@@ -4,44 +4,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Nobita</title>
     <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/responsive.css">
+    <link rel="icon" type="image/x-icon" href="./assets/img/map/map.jpg">
     <link rel="stylesheet" href="./assets/font/themify-icons-font/themify-icons/themify-icons.css">
 </head>
 
 <body>
     <div class="main">
-        <div class="header">
+        <div id="header" class="header">
             <!-- begin nav -->
             <ul class="nav">
                 <li>
-                    <a href="">Home</a>
+                    <a href="#">Home</a>
                 </li>
                 <li>
-                    <a href="">Band</a>
+                    <a href="#band">Band</a>
                 </li>
                 <li>
-                    <a href="">Tour</a>
+                    <a href="#tour">Tour</a>
                 </li>
                 <li>
-                    <a href="">Contact</a>
+                    <a href="#contact">Contact</a>
                 </li>
                 <li>
-                    <a href="">More
+                    <a href="#">More
                         <i class="nav-arrow-down ti-angle-down"></i>
                     </a>
                     <ul class="subnav">
-                        <li><a href="">Merchandise</a></li>
-                        <li><a href="">Extras</a></li>
-                        <li><a href="">Media</a></li>
+                        <li><a href="#">Merchandise</a></li>
+                        <li><a href="#">Extras</a></li>
+                        <li><a href="#">Media</a></li>
                     </ul>
                 </li>
             </ul>
             <!-- end nav -->
+            <!-- mobile menu button -->
+            <div id="mobile-menu" class="mobile-menu-btn">
+                <i class="menu-icon ti-menu"></i>
+            </div>
             <!-- begin search button -->
             <div class="search-btn">
                 <i class="search-icon ti-search"></i>
             </div>
+            
         </div>
         <div class="slider">
             <div class="text-content">
@@ -52,7 +59,7 @@
             </div>
         </div>
         <div class="content">
-            <div class="content-section">
+            <div id="band" class="content-section">
                 <h2 class="section-heading">
                     THE BAND
                 </h2>
@@ -65,16 +72,16 @@
                     est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
                     commodo consequat.</p>
-                <div class="member-list">
-                    <div class="member-item">
+                <div class="row member-list">
+                    <div class=" col col-third s-col-full mt-16 text-center">
                         <p class="member-name">Name</p>
                         <img src="./assets/img/band/member1.jpg" alt="avatar" class="member-img">
                     </div>
-                    <div class="member-item">
+                    <div class=" col col-third s-col-full mt-16 text-center">
                         <p class="member-name">Name</p>
                         <img src="./assets/img/band/member1.jpg" alt="avatar" class="member-img">
                     </div>
-                    <div class="member-item">
+                    <div class=" col col-third s-col-full mt-16 text-center">
                         <p class="member-name">Name</p>
                         <img src="./assets/img/band/member1.jpg" alt="avatar" class="member-img">
                     </div>
@@ -83,7 +90,7 @@
             </div>
             <!-- tour section -->
             <div class="tour-section">
-                <div class="content-section">
+                <div id="tour" class="content-section">
                     <h2 class="section-heading text-white">
                         TOUR DATES
                     </h2>
@@ -95,32 +102,32 @@
                         <li>November <span class="quantity">3</span></li>
                     </ul>
                     <!-- places -->
-                    <div class="place-list">
-                        <div class="place-item">
+                    <div class="row place-list">
+                        <div class="col col-third s-col-full mt-16">
                             <img src="./assets/img/places/place1.jpg" alt="New York" class="place-img">
                             <div class="place-body">
                                 <h3 class="place-heading">New York</h3>
                                 <p class="place-time">Fri 27 Nov 2016</p>
                                 <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <a href="#" class="place-buy-btn">Buy Tickets</a>
+                                <a href="#" class="btn">Buy Tickets</a>
                             </div>
                         </div>
-                        <div class="place-item">
+                        <div class="col col-third s-col-full mt-16">
                             <img src="./assets/img/places/place2.jpg" alt="New York" class="place-img">
                             <div class="place-body">
                                 <h3 class="place-heading">Paris</h3>
                                 <p class="place-time">Sat 28 Nov 2016</p>
                                 <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <a href="#" class="place-buy-btn">Buy Tickets</a>
+                                <a href="#" class="btn">Buy Tickets</a>
                             </div>
                         </div>
-                        <div class="place-item">
+                        <div class="col col-third s-col-full mt-16">
                             <img src="./assets/img/places/place3.jpg" alt="New York" class="place-img">
                             <div class="place-body">
                                 <h3 class="place-heading">San Francisco</h3>
                                 <p class="place-time">Sun 29 Nov 2016</p>
                                 <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <a href="#" class="place-buy-btn">Buy Tickets</a>
+                                <a href="#" class="btn">Buy Tickets</a>
                             </div>
                         </div>
                         <div class="clear"></div>
@@ -128,51 +135,99 @@
                 </div>
             </div>
             <!-- contact section -->
-            <div class="content-section">
+            <div id="contact" class="content-section">
                 <h2 class="section-heading">
                     CONTACT
                 </h2>
                 <p class="section-sub-heading">Fan? Drop a note!</p>
-                <div class="contact-body">
-                    <div class="contact-title">
-                        <ul class="contact-title-list">
-                            <li>
-                                <i class="contact-icon ti-location-pin"></i>
-                                Chicago, US</li>
-                            <li>
-                                <i class="contact-icon ti-headphone-alt"></i>
-                                Phone: +00 151515</li>
-                            <li>
-                                <i class="contact-icon ti-email"></i>
-                                Email: mail@mail.com</li>
-                        </ul>
+                <div class="row contact-content">
+                    <div class="contact-form-item col col-half contact-info">
+                        <!-- chua thong tin lien he -->
+                        <p><i class="ti-location-pin"></i>Chicago, US</p>
+                        <p><i class="ti-mobile"></i>Phone: +00 151515</p>
+                        <p><i class="ti-email"></i>Email: mail@mail.com</p>
                     </div>
-                    <div class="contact-input">
-                        <div class="contact-info">
-                            <input type="text" placeholder="Name" class="contact-name">
-                            <input type="text" placeholder="Email" class="contact-email">
-                        </div>
-                        <input type="text" placeholder="Message" class="contact-msg">
-                        <a href="#" class="contact-btn">SEND</a>
+                    <div class="contact-form-item col col-half contact-form">
+                        <form action="">
+                            <div class="row">
+                                <div class="contact-form-item col col-half">
+                                    <input type="text" name="" placeholder="Name" required id="" class="form-control">
+                                </div>
+                                <div class="contact-form-item col col-half">
+                                    <input type="email" name="" placeholder="Email" required id="" class="form-control">
+                                </div>
+                            </div>
+                            <div class="row mt-8">
+                                <div class="col col-full">
+                                    <input type="text" name="" placeholder="Message" required id=""
+                                        class="form-control">
+                                </div>
+                            </div>
+                            <input type="submit" value="SEND" class="btn pull-right mt-16">
+                        </form>
                     </div>
-                    
-                </div>       
+                </div>
             </div>
-            <div class="map">
-                
+            <div class="map-section">
+                <img src="./assets/img/map/map.jpg" alt="Map">
             </div>
         </div>
         <div class="footer">
-                <i class="footer-icon ti-facebook"></i>
-                <i class="footer-icon ti-github"></i>
-                <i class="footer-icon ti-instagram"></i>
-                <i class="footer-icon ti-pinterest-alt"></i>
-                <i class="footer-icon ti-twitter-alt"></i>
-                <i class="footer-icon ti-linkedin"></i>
-                <p class="footer-end">Powered by 
-                    <a href="#" target="_blank">w3.css</a></p>
+            <div class="social-list">
+                <a href="">
+                    <i class="footer-icon ti-facebook"></i>
+                </a>
+                <a href="">
+                    <i class="footer-icon ti-github"></i>
+                </a>
+                <a href="">
+                    <i class="footer-icon ti-instagram"></i>
+                </a>
+                <a href="">
+                    <i class="footer-icon ti-pinterest-alt"></i>
+                </a>
+                <a href="">
+                    <i class="footer-icon ti-twitter-alt"></i>
+                </a>
+                <a href="">
+                    <i class="footer-icon ti-linkedin"></i>
+                </a>
+                <p class="footer-end">Powered by
+                    <a href="#" target="_blank">w3.css</a>
+                </p>
+            </div>
         </div>
     </div>
+    <!-- code javascript -->
+    <script>
+        var header = document.getElementById('header');
+        var mobileMenu = document.getElementById('mobile-menu');
+        var headerHeight = header.clientHeight;
+        //dong mo mobile menu
+        mobileMenu.onclick = function() {
+            var isClosed = header.clientHeight === headerHeight;
+            if (isClosed) {
+                header.style.height = 'auto';
+            }
+            else {
+                header.style.height = null;
+            }
+        }
+        //tu dong dong khi chon menu
+        var menuItems = document.querySelectorAll('.nav li a[href *= "#"]')
+        for (var i = 0; i < menuItems.length; i++) {
+            var menuItem = menuItems[i];
+            menuItem.onclick = function(event) {
+                var isParentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav');
+                if (isParentMenu) {
+                    event.preventDefault();
+                }
+                else {
+                    header.style.height = null;
+                }
+            }
+        }  
+    </script>
 </body>
 
 </html>
